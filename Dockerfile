@@ -3,16 +3,16 @@ FROM ubuntu:14.04
 MAINTAINER Chris Daish <chrisdaish@gmail.com>
 
 # ReSet Source
-RUN echo "deb http://mirrors.163.com/ubuntu/dists/ trusty main restricted universe multiverse" >> /etc/apt/sources.list
-RUN echo "deb http://mirrors.163.com/ubuntu/dists/ trusty-security main restricted universe multiverse" >> /etc/apt/sources.list
-RUN echo "deb http://mirrors.163.com/ubuntu/dists/ trusty-updates main restricted universe multiverse" >> /etc/apt/sources.list
-RUN echo "deb http://mirrors.163.com/ubuntu/dists/ trusty-proposed main restricted universe multiverse" >> /etc/apt/sources.list
-RUN echo "deb http://mirrors.163.com/ubuntu/dists/ trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list
-RUN echo "deb-src http://mirrors.163.com/ubuntu/dists/ trusty main restricted universe multiverse" >> /etc/apt/sources.list
-RUN echo "deb-src http://mirrors.163.com/ubuntu/dists/ trusty-security main restricted universe multiverse" >> /etc/apt/sources.list
-RUN echo "deb-src http://mirrors.163.com/ubuntu/dists/ trusty-updates main restricted universe multiverse" >> /etc/apt/sources.list
-RUN echo "deb-src http://mirrors.163.com/ubuntu/dists/ trusty-proposed main restricted universe multiverse" >> /etc/apt/sources.list
-RUN echo "deb-src http://mirrors.163.com/ubuntu/dists/ trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV VLCVERSION 2.1.6-0ubuntu14.04.1
